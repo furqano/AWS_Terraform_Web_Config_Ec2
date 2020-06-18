@@ -263,22 +263,3 @@ depends_on = [
 
 }
 
-
-//Updating the Url
-/*
-resource "null_resource" "null_change" {
-   depends_on = [aws_cloudfront_distribution.s3_distribution,]
-	connection {
-    	type   	  = "ssh"
-    	user   	  = "ec2-user"
-    	private_key   = file("E:\fate_key.pem")
-        host     = aws_instance.web.public_ip
-    	}
-
-
-	provisioner "remote-exec" {
-		inline = [
-			"sudo sed -i s@path@https://${aws_cloudfront_distribution.s3_distribution.domain_name}/${aws_s3_bucket_object.object.key}@g' /var/www/html/index.html"
-		]
-	}
-*/
