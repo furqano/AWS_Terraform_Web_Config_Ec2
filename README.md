@@ -3,6 +3,8 @@
 
 ##### It is a simple Terraform Infrastructure as code (IaC) to launch and setup webserver in AWS EC2 service ..
 
+##### https://medium.com/@mohamedfurqan.o/aws-terraform-4c6837f23317?source=friends_link&sk=056c0d3d765dcfd8919d4f8268b871b8
+
 
 ````
 provider "aws" {
